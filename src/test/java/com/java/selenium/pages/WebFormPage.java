@@ -23,7 +23,8 @@ public class WebFormPage extends ActionEngine {
 			type(textArea, "Ttype Ttype asdtwjjk sdsmfsf sfgsg,gfdgdg dgdfgdfgfd");
 			Thread.sleep(5000);
 			click(myCheck);
-			Thread.sleep(2000);
+			Thread.sleep(1000);
+			Thread.sleep(1000);
 
 			click(selName);
 
