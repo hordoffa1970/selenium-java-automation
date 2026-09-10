@@ -18,7 +18,6 @@ public class WebFormPage extends ActionEngine {
 
 		try {
 			// 6. Find a text input element using its 'name' attribute and type text into it
-			
 			type(mytextId, "Selenium Java Automation By Wondimu!!");
 			type(textArea, "Ttype Ttype asdtwjjk sdsmfsf sfgsg,gfdgdg dgdfgdfgfd");
 			Thread.sleep(5000);
