@@ -8,11 +8,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class MyFirstTest {
+import com.java.selenium.actions.ActionEngine;
+
+public class MyFirstTest  extends ActionEngine{
 	
 	@Test
-	public void testCase1() {
-
+	public void testCase1(){
+		extentTest = extentReports.startTest("Test", "Testcase1");
         // 1. Initialize the Chrome WebDriver instance
         WebDriver driver = new ChromeDriver();
 

@@ -14,27 +14,27 @@ public class WebFormPage extends ActionEngine {
 	private By toIndex = By.partialLinkText("to index");
 	private By submit = By.xpath("//button[text()='Submit']");
 	
-	public void fillWebForm() {
+	public void fillWebForm() throws Throwable {
 
 		try {
 			// 6. Find a text input element using its 'name' attribute and type text into it
-			type(mytextId, "Selenium Java Automation By Wondimu!!");
-			type(textArea, "Ttype Ttype asdtwjjk sdsmfsf sfgsg,gfdgdg dgdfgdfgfd");
+			type(mytextId, "Selenium Java Automation By Wondimu!!", "My text id");
+			type(textArea, "Ttype Ttype asdtwjjk sdsmfsf sfgsg,gfdgdg dgdfgdfgfd", "text area");
 			Thread.sleep(5000);
-			click(myCheck);
+			click(myCheck, "My check box");
 			Thread.sleep(1000);
 			Thread.sleep(1000);
 
-			click(selName);
+			click(selName, "SelName");
 
-			click(returToIndex);
-			click(toIndex);
+			click(returToIndex, "My tutorial");
+			click(toIndex, "My index");
 			Thread.sleep(5000);
 			// 7. Find the submit button using a CSS Selector and click it
 			// WebElement submitButton =
 			// driver.findElement(By.xpath("//button[text()='Submit']"));
 //        submitButton.click();
-			click(submit);
+			click(submit, "submit button");
 
 		} catch (Exception e) {
 			e.printStackTrace();
