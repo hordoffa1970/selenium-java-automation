@@ -9,7 +9,7 @@ public class PracticeAutoTesting extends ActionEngine {
 	WebFormPage webFormPage = new WebFormPage();
 
 	@Test
-	public void testCase1() {
+	public void testCase1() throws Throwable {
 		try {
 			webFormPage.fillWebForm();
 		} catch (Exception e) {
